@@ -1,0 +1,87 @@
+{
+    "devices": [
+      {
+        "id": 1,
+        "category": "TV",
+        "brand": "Samsung",
+        "model": "QLED Q80T",
+        "price": 1200,
+        "image_url": "https://example.com/images/samsung-qled-q80t.jpg"
+      },
+      {
+        "id": 2,
+        "category": "Game Console",
+        "brand": "Sony",
+        "model": "PlayStation 5",
+        "price": 500,
+        "image_url": "https://example.com/images/playstation-5.jpg"
+      },
+      {
+        "id": 3,
+        "category": "Phone",
+        "brand": "Apple",
+        "model": "iPhone 14",
+        "price": 999,
+        "image_url": "https://example.com/images/iphone-14.jpg"
+      },
+      {
+        "id": 4,
+        "category": "Tablet",
+        "brand": "Samsung",
+        "model": "Galaxy Tab S8",
+        "price": 699,
+        "image_url": "https://example.com/images/galaxy-tab-s8.jpg"
+      },
+      {
+        "id": 5,
+        "category": "Computer",
+        "brand": "Dell",
+        "model": "XPS 13",
+        "price": 1300,
+        "image_url": "https://example.com/images/dell-xps-13.jpg"
+      },
+      {
+        "id": 6,
+        "category": "TV",
+        "brand": "LG",
+        "model": "OLED CX",
+        "price": 1800,
+        "image_url": "https://example.com/images/lg-oled-cx.jpg"
+      },
+      {
+        "id": 7,
+        "category": "Game Console",
+        "brand": "Microsoft",
+        "model": "Xbox Series X",
+        "price": 500,
+        "image_url": "https://example.com/images/xbox-series-x.jpg"
+       
+      },
+      {
+        "id": 8,
+        "category": "Phone",
+        "brand": "Samsung",
+        "model": "Galaxy S22",
+        "price": 850,
+        "image_url": "https://example.com/images/galaxy-s22.jpg"
+        
+      },
+      {
+        "id": 9,
+        "category": "Tablet",
+        "brand": "Apple",
+        "model": "iPad Pro",
+        "price": 1099,
+        "image_url": "https://example.com/images/ipad-pro.jpg"
+      },
+      {
+        "id": 10,
+        "category": "Computer",
+        "brand": "Apple",
+        "model": "MacBook Pro 14",
+        "price": 1999,
+        "image_url": "https://example.com/images/macbook-pro-14.jpg"
+      }
+    ]
+  }
+  
