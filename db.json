@@ -1,87 +1,84 @@
 {
-    "devices": [
-      {
-        "id": 1,
-        "category": "TV",
-        "brand": "Samsung",
-        "model": "QLED Q80T",
-        "price": 120000,
-        "image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkBu281pXnywkbPqpOR4wwTVdM3eB5w_kcZr_2w4IWaRo2Ia2wzCu7Qk3j_xGIoLiwQQ7OFTPsWJW0QDo_wuBW1-2eqXFiR49ZTrbZRj50So5r8_vLEKTi03cxsb5zUea6uRjgFKwRFd82/s800/samsung-qled-4k-q80t-tv-3.png"
-      },
-      {
-        "id": 2,
-        "category": "Game Console",
-        "brand": "Sony",
-        "model": "PlayStation 5",
-        "price": 70000,
-        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6rgLa7aTOmjvZJDUI_j__3jkmbKCJg0TNxA&s"
-      },
-      {
-        "id": 3,
-        "category": "Phone",
-        "brand": "Apple",
-        "model": "iPhone 14",
-        "price": 144000,
-        "image_url": "https://www.phoneplacekenya.com/wp-content/uploads/2022/05/iPhone-14-Pro-Max-Purple.jpg"
-      },
-      {
-        "id": 4,
-        "category": "Tablet",
-        "brand": "Samsung",
-        "model": "Galaxy Tab S8",
-        "price": 60000,
-        "image_url": "https://telefonika.com/wp-content/uploads/2023/08/S9-ULTRA.jpg"
-      },
-      {
-        "id": 5,
-        "category": "Computer",
-        "brand": "Dell",
-        "model": "XPS 13",
-        "price": 130000,
-        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2U9_Yst13rH3klDI-DDoONEuDTQ2PUVGb8g&s"
-      },
-      {
-        "id": 6,
-        "category": "TV",
-        "brand": "LG",
-        "model": "OLED CX",
-        "price": 180000,
-        "image_url":"https://i0.wp.com/www.dealbora.com/wp-content/uploads/2018/02/1-20.jpg?resize=300%2C300&ssl=1"
-      },
-      {
-        "id": 7,
-        "category": "Game Console",
-        "brand": "Microsoft",
-        "model": "Xbox Series X",
-        "price": 50000,
-        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5jjCQB4tKkPLAfWWkkt9QBYFCeJ6JeySicw&s"
-       
-      },
-      {
-        "id": 8,
-        "category": "Phone",
-        "brand": "Samsung",
-        "model": "Galaxy S22",
-        "price": 85000,
-        "image_url": "https://smartphonestorekenya.com/wp-content/uploads/2022/07/SAMSUNG-GALAXY-S22-ULTRA.jpeg"
-        
-      },
-      {
-        "id": 9,
-        "category": "Tablet",
-        "brand": "Apple",
-        "model": "iPad Pro",
-        "price": 109900,
-        "image_url": "https://cellularkenya.co.ke/wp-content/uploads/2022/05/Apple-Product-images-57-680x412-1.png"
-      },
-      {
-        "id": 10,
-        "category": "Computer",
-        "brand": "Apple",
-        "model": "MacBook Pro 14",
-        "price": 199009,
-        "image_url": "https://www.digitaltrends.com/wp-content/uploads/2023/02/macbook-pro-14-m2-max.jpg?p=1"
-      }
-    ]
-  }
-  
+  "devices": [
+    {
+      "id": "1",
+      "category": "TV",
+      "brand": "Samsung",
+      "model": "QLED Q80T",
+      "price": 120000,
+      "image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkBu281pXnywkbPqpOR4wwTVdM3eB5w_kcZr_2w4IWaRo2Ia2wzCu7Qk3j_xGIoLiwQQ7OFTPsWJW0QDo_wuBW1-2eqXFiR49ZTrbZRj50So5r8_vLEKTi03cxsb5zUea6uRjgFKwRFd82/s800/samsung-qled-4k-q80t-tv-3.png"
+    },
+    {
+      "id": "2",
+      "category": "Game Console",
+      "brand": "Sony",
+      "model": "PlayStation 5",
+      "price": 71600,
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6rgLa7aTOmjvZJDUI_j__3jkmbKCJg0TNxA&s"
+    },
+    {
+      "id": "3",
+      "category": "Phone",
+      "brand": "Apple",
+      "model": "iPhone 14",
+      "price": 144400,
+      "image_url": "https://www.phoneplacekenya.com/wp-content/uploads/2022/05/iPhone-14-Pro-Max-Purple.jpg"
+    },
+    {
+      "id": "4",
+      "category": "Tablet",
+      "brand": "Samsung",
+      "model": "Galaxy Tab S8",
+      "price": 60000,
+      "image_url": "https://telefonika.com/wp-content/uploads/2023/08/S9-ULTRA.jpg"
+    },
+    {
+      "id": "5",
+      "category": "Computer",
+      "brand": "Dell",
+      "model": "XPS 13",
+      "price": 130000,
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2U9_Yst13rH3klDI-DDoONEuDTQ2PUVGb8g&s"
+    },
+    {
+      "id": "6",
+      "category": "TV",
+      "brand": "LG",
+      "model": "OLED CX",
+      "price": 180000,
+      "image_url": "https://i0.wp.com/www.dealbora.com/wp-content/uploads/2018/02/1-20.jpg?resize=300%2C300&ssl=1"
+    },
+    {
+      "id": "7",
+      "category": "Game Console",
+      "brand": "Microsoft",
+      "model": "Xbox Series X",
+      "price": 50500,
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5jjCQB4tKkPLAfWWkkt9QBYFCeJ6JeySicw&s"
+    },
+    {
+      "id": "8",
+      "category": "Phone",
+      "brand": "Samsung",
+      "model": "Galaxy S22",
+      "price": 85200,
+      "image_url": "https://smartphonestorekenya.com/wp-content/uploads/2022/07/SAMSUNG-GALAXY-S22-ULTRA.jpeg"
+    },
+    {
+      "id": "9",
+      "category": "Tablet",
+      "brand": "Apple",
+      "model": "iPad Pro",
+      "price": 109900,
+      "image_url": "https://cellularkenya.co.ke/wp-content/uploads/2022/05/Apple-Product-images-57-680x412-1.png"
+    },
+    {
+      "id": "10",
+      "category": "Computer",
+      "brand": "Apple",
+      "model": "MacBook Pro 14",
+      "price": 199009,
+      "image_url": "https://www.digitaltrends.com/wp-content/uploads/2023/02/macbook-pro-14-m2-max.jpg?p=1"
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
 import AboutUs from './pages/AboutUs';
 
+
 function App() {
   const [items, setItems] = useState([]); 
   const [loading, setLoading] = useState(true); 
