@@ -51,21 +51,6 @@
 }
 
 
-/* Cart Icon */
-.navbar-cart {
-  font-size: 24px;
-  color: #ecf0f1;
-  margin-left: 20px;
-}
-
-.navbar-cart i {
-  cursor: pointer;
-}
-
-.navbar-cart i:hover {
-  color: #3498db;
-}
-
 /* Centered Search Bar */
 .navbar-search {
   display: flex;

@@ -23,13 +23,6 @@ function Navbar() {
   
       </div>
 
-      {/* Cart Icon */}
-      <div className="navbar-cart">
-        <Link to="/cart">
-          <i className="fas fa-shopping-cart"></i>
-        </Link>
-      </div>
-
       {/* Hamburger Menu for Mobile */}
       <div className="navbar-toggle" onClick={toggleMenu}>
         <span></span>

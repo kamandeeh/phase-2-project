@@ -13,7 +13,7 @@
       "category": "Game Console",
       "brand": "Sony",
       "model": "PlayStation 5",
-      "price": 71600,
+      "price": 71800,
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6rgLa7aTOmjvZJDUI_j__3jkmbKCJg0TNxA&s"
     },
     {
@@ -21,7 +21,7 @@
       "category": "Phone",
       "brand": "Apple",
       "model": "iPhone 14",
-      "price": 144400,
+      "price": "200000",
       "image_url": "https://www.phoneplacekenya.com/wp-content/uploads/2022/05/iPhone-14-Pro-Max-Purple.jpg"
     },
     {
@@ -29,7 +29,7 @@
       "category": "Tablet",
       "brand": "Samsung",
       "model": "Galaxy Tab S8",
-      "price": 60000,
+      "price": 60700,
       "image_url": "https://telefonika.com/wp-content/uploads/2023/08/S9-ULTRA.jpg"
     },
     {
@@ -37,7 +37,7 @@
       "category": "Computer",
       "brand": "Dell",
       "model": "XPS 13",
-      "price": 130000,
+      "price": 131200,
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2U9_Yst13rH3klDI-DDoONEuDTQ2PUVGb8g&s"
     },
     {
@@ -45,7 +45,7 @@
       "category": "TV",
       "brand": "LG",
       "model": "OLED CX",
-      "price": 180000,
+      "price": 180400,
       "image_url": "https://i0.wp.com/www.dealbora.com/wp-content/uploads/2018/02/1-20.jpg?resize=300%2C300&ssl=1"
     },
     {
@@ -53,7 +53,7 @@
       "category": "Game Console",
       "brand": "Microsoft",
       "model": "Xbox Series X",
-      "price": 50500,
+      "price": 50900,
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5jjCQB4tKkPLAfWWkkt9QBYFCeJ6JeySicw&s"
     },
     {
@@ -61,7 +61,7 @@
       "category": "Phone",
       "brand": "Samsung",
       "model": "Galaxy S22",
-      "price": 85200,
+      "price": 85700,
       "image_url": "https://smartphonestorekenya.com/wp-content/uploads/2022/07/SAMSUNG-GALAXY-S22-ULTRA.jpeg"
     },
     {
@@ -69,7 +69,7 @@
       "category": "Tablet",
       "brand": "Apple",
       "model": "iPad Pro",
-      "price": 109900,
+      "price": 110400,
       "image_url": "https://cellularkenya.co.ke/wp-content/uploads/2022/05/Apple-Product-images-57-680x412-1.png"
     },
     {
@@ -77,7 +77,7 @@
       "category": "Computer",
       "brand": "Apple",
       "model": "MacBook Pro 14",
-      "price": 199009,
+      "price": 199709,
       "image_url": "https://www.digitaltrends.com/wp-content/uploads/2023/02/macbook-pro-14-m2-max.jpg?p=1"
     }
   ]
