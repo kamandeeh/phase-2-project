@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
-import ImageSlider from '../components/ImageSlider'; 
+import ImageSlider from '../components/ImageSlider';
 
 function Home() {
   const [devices, setDevices] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [search, setSearch] = useState("");
 
-  // Fetch devices from the API
   useEffect(() => {
     fetch('http://localhost:5000/devices')
       .then((response) => {
@@ -17,6 +17,7 @@ function Home() {
         return response.json();
       })
       .then((data) => {
+        console.log(data);  // Log the fetched data
         setDevices(data);
         setLoading(false);
       })
@@ -61,6 +62,15 @@ function Home() {
       });
   };
 
+  // Filter devices based on search query
+  const filteredDevices = devices.filter((device) => 
+    device.brand.toLowerCase().includes(search.toLowerCase()) || 
+    device.model.toLowerCase().includes(search.toLowerCase()) ||
+    device.category.toLowerCase().includes(search.toLowerCase())
+  );
+
+  console.log(filteredDevices);  // Log the filtered devices
+
   if (loading) {
     return <p>Loading devices...</p>;
   }
@@ -71,17 +81,30 @@ function Home() {
 
   return (
     <div>
-      <ImageSlider /> {/* Add the image slider here */}
+      <ImageSlider />
+
+      {/* Search Bar */}
+      <div className="search-container">
+        <label htmlFor="search-input" className="search-label">Search for a device:</label>
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Enter electronic device name..."
+          className="search-input"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
+
       <h1>Available Devices</h1>
       <div className="device-list">
-        {devices.map((device) => (
+        {filteredDevices.map((device) => (
           <div key={device.id} className="device-item">
             <img src={device.image_url} alt={`${device.brand} ${device.model}`} />
             <h3>{device.brand} {device.model}</h3>
             <p>Category: {device.category}</p>
             <p>Price: ksh{device.price}</p>
             
-
             {/* Delete Button */}
             <button onClick={() => deleteDevice(device.id)}>Delete</button>
 

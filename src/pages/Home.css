@@ -91,3 +91,59 @@ button:hover {
   }
 }
 
+/* Search Container */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Label Styling */
+.search-label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Input Styling */
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Focus State for the Input */
+.search-input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Input Placeholder Styling */
+.search-input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Optional Button Styling (if you add a button) */
+.search-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover State for Button */
+.search-btn:hover {
+  background-color: #0056b3;
+}
