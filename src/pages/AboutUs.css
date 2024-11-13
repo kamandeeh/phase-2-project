@@ -1,0 +1,109 @@
+/* AboutUs.css */
+
+/* Overall container */
+.about-us-container {
+    padding: 60px 20px;
+    background-color: #f4f7fa;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header section */
+  .about-us-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-us-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .about-us-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Content section */
+  .about-us-content {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  /* Wrap heading and content together in a box */
+  .about-us-content .section-box {
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for section title (h2) inside the box */
+  .about-us-content .section-box h2 {
+    font-size: 2rem;
+    color: #00aaff;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 10px;
+  }
+  
+  /* Regular content styling inside the box */
+  .about-us-content .section-box p {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .about-us-content .section-box ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  
+  .about-us-content .section-box ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .about-us-content .section-box ul li strong {
+    color: #00aaff;
+  }
+  
+  .about-us-content .section-box a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .about-us-content .section-box a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .about-us-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-us-header p {
+      font-size: 1rem;
+    }
+  
+    .about-us-content .section-box h2 {
+      font-size: 1.8rem;
+    }
+  
+    .about-us-content .section-box p {
+      font-size: 1rem;
+    }
+  }
+  
