@@ -20,6 +20,7 @@ function Navbar() {
       <div className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
         <Link to="/">Home</Link>
         <Link to="/about">About Us</Link>
+        <Link to="/newForm-container">Add New Device</Link>
   
       </div>
 
@@ -35,6 +36,7 @@ function Navbar() {
         <div className="navbar-menu">
           <Link to="/">Home</Link>
           <Link to="/about">About Us</Link>
+          <Link to="/newForm-container">Add New Device</Link>
           
         </div>
       )}

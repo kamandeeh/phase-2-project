@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
 import AboutUs from './pages/AboutUs';
+import NewDeviceForm from './pages/NewDeviceForm';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
         <Route path="/" element={<Home items={items} />} /> 
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/newForm-container" element={<NewDeviceForm />} />
       </Routes>
       <Footer />
     </Router>
