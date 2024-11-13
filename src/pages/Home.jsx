@@ -7,6 +7,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [search, setSearch] = useState("");
+  const [editableDevice, setEditableDevice] = useState(null);
 
   useEffect(() => {
     fetch('http://localhost:5000/devices')
@@ -17,7 +18,6 @@ function Home() {
         return response.json();
       })
       .then((data) => {
-        console.log(data);  // Log the fetched data
         setDevices(data);
         setLoading(false);
       })
@@ -36,7 +36,6 @@ function Home() {
         if (!response.ok) {
           throw new Error('Failed to delete device');
         }
-        // Remove deleted device from state
         setDevices(devices.filter((device) => device.id !== id));
       })
       .catch((error) => {
@@ -56,6 +55,7 @@ function Home() {
       .then((response) => response.json())
       .then((data) => {
         setDevices(devices.map((device) => (device.id === id ? data : device)));
+        setEditableDevice(null); // Reset the editable device
       })
       .catch((error) => {
         alert('Error updating device: ' + error.message);
@@ -63,13 +63,20 @@ function Home() {
   };
 
   // Filter devices based on search query
-  const filteredDevices = devices.filter((device) => 
-    device.brand.toLowerCase().includes(search.toLowerCase()) || 
+  const filteredDevices = devices.filter((device) =>
+    device.brand.toLowerCase().includes(search.toLowerCase()) ||
     device.model.toLowerCase().includes(search.toLowerCase()) ||
     device.category.toLowerCase().includes(search.toLowerCase())
   );
 
-  console.log(filteredDevices);  // Log the filtered devices
+  // Handle input change for editing device
+  const handleInputChange = (e, field) => {
+    const { value } = e.target;
+    setEditableDevice({
+      ...editableDevice,
+      [field]: value,
+    });
+  };
 
   if (loading) {
     return <p>Loading devices...</p>;
@@ -105,22 +112,51 @@ function Home() {
             <p>Category: {device.category}</p>
             <p>Price: ksh{device.price}</p>
             
+            {/* Edit Button - opens form to update device */}
+            <button onClick={() => setEditableDevice(device)}>Update</button>
+
             {/* Delete Button */}
             <button onClick={() => deleteDevice(device.id)}>Delete</button>
-
-            {/* Update Button */}
-            <button onClick={() => {
-              const updatedDevice = { 
-                ...device, 
-                price: device.price + 100 
-              };
-              updateDevice(device.id, updatedDevice);
-            }}>
-              Update Price
-            </button>
           </div>
         ))}
       </div>
+
+      {/* Edit Device Form */}
+      {editableDevice && (
+        <div className="edit-device-form">
+          <h2>Update Device</h2>
+          <input
+            type="text"
+            value={editableDevice.brand}
+            onChange={(e) => handleInputChange(e, 'brand')}
+            placeholder="Brand"
+          />
+          <input
+            type="text"
+            value={editableDevice.model}
+            onChange={(e) => handleInputChange(e, 'model')}
+            placeholder="Model"
+          />
+          <input
+            type="text"
+            value={editableDevice.category}
+            onChange={(e) => handleInputChange(e, 'category')}
+            placeholder="Category"
+          />
+          <input
+            type="number"
+            value={editableDevice.price}
+            onChange={(e) => handleInputChange(e, 'price')}
+            placeholder="Price"
+          />
+          <button
+            onClick={() => updateDevice(editableDevice.id, editableDevice)}
+          >
+            Save Changes
+          </button>
+          <button onClick={() => setEditableDevice(null)}>Cancel</button>
+        </div>
+      )}
     </div>
   );
 }

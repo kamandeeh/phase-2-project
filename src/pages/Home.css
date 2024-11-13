@@ -147,3 +147,92 @@ button:hover {
 .search-btn:hover {
   background-color: #0056b3;
 }
+/* Edit Device Form Container */
+.edit-device-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Form Heading */
+.edit-device-form h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.edit-device-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Focused Input */
+.edit-device-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Save and Cancel Buttons */
+.edit-device-form button {
+  width: 48%;
+  padding: 10px;
+  margin: 10px 1%;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-device-form button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.edit-device-form button:first-child:hover {
+  background-color: #218838;
+}
+
+.edit-device-form button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.edit-device-form button:last-child:hover {
+  background-color: #c82333;
+}
+
+/* Center the buttons */
+.edit-device-form .button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Input Field Placeholder */
+.edit-device-form input::placeholder {
+  color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .edit-device-form {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .edit-device-form button {
+    width: 48%;
+    font-size: 0.9rem;
+  }
+}
