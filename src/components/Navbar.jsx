@@ -1,29 +1,52 @@
-function Navbar(){
-    return(
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    )
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
+
+function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <nav className="navbar">
+      {/* Logo */}
+      <div className="navbar-logo">
+        <Link to="/" className="navbar-brand">BuyHive.com</Link>
+      </div>
+
+      {/* Navbar Links (Visible in Desktop) */}
+      <div className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
+        <Link to="/">Home</Link>
+        <Link to="/about">About Us</Link>
+  
+      </div>
+
+      {/* Cart Icon */}
+      <div className="navbar-cart">
+        <Link to="/cart">
+          <i className="fas fa-shopping-cart"></i>
+        </Link>
+      </div>
+
+      {/* Hamburger Menu for Mobile */}
+      <div className="navbar-toggle" onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="navbar-menu">
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
+          
+        </div>
+      )}
+    </nav>
+  );
 }
+
 export default Navbar;
