@@ -5,11 +5,11 @@ function Search({ search, setSearch }) {
 
   return (
     <div className="search-container">
-      <label htmlFor="search-input" className="search-label">Search for an electronic device :</label>
+      <label htmlFor="search-input" className="search-label">Search for a device:</label>
       <input
         type="text"
         id="search-input"
-        placeholder="Enter device name..."
+        placeholder="Enter electronic device name..."
         className="search-input"
         value={search}
         onChange={handleSearchInputChange}
