@@ -88,6 +88,11 @@
   color: #3498db;
 }
 
+.navbar-brand{
+  font-weight: bolder;
+  font-size: larger;
+}
+
 /* Hamburger Menu (Mobile) */
 .navbar-toggle {
   display: none;

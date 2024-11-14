@@ -13,7 +13,7 @@ function Navbar() {
     <nav className="navbar">
       {/* Logo */}
       <div className="navbar-logo">
-        <Link to="/" className="navbar-brand">BuyHive.com</Link>
+        <h3 className="navbar-brand">BuyHive.com</h3>
       </div>
 
       {/* Navbar Links (Visible in Desktop) */}
