@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     // Fetch items data from the API
-    fetch('http://localhost:5000/devices') 
+    fetch('https://phase-2-project-4-lfsw.onrender.com/devices') 
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
