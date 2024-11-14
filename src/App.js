@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     // Fetch items data from the API
-    fetch('http://localhost:5000/devices') 
+    fetch('http://localhost:6001/devices') 
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
