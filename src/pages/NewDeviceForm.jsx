@@ -11,7 +11,7 @@ function NewDeviceForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5000/devices", { 
+    fetch("https://phase-2-project-4-lfsw.onrender.com/devices", { 
       method: "POST",
       headers: {
         "Content-Type": "application/json",

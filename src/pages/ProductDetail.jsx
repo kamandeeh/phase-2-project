@@ -8,7 +8,7 @@ function ProductDetail() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${id}`)
+    fetch(`https://phase-2-project-4-lfsw.onrender.com/products/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setProduct(data);
