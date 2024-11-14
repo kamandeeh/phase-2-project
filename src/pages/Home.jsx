@@ -10,7 +10,7 @@ function Home() {
   const [editableDevice, setEditableDevice] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:6001/devices')
+    fetch('http://localhost:5000/devices')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -29,7 +29,7 @@ function Home() {
 
   // Delete device
   const deleteDevice = (id) => {
-    fetch(`http://localhost:6001/devices/${id}`, {
+    fetch(`http://localhost:5000/devices/${id}`, {
       method: 'DELETE',
     })
       .then((response) => {
@@ -45,7 +45,7 @@ function Home() {
 
   // Update device
   const updateDevice = (id, updatedDevice) => {
-    fetch(`http://localhost:6001/devices/${id}`, {
+    fetch(`http://localhost:5000/devices/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

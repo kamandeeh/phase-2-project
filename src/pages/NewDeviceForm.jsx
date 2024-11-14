@@ -11,7 +11,7 @@ function NewDeviceForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:6001/devices", { 
+    fetch("http://localhost:5000/devices", { 
       method: "POST",
       headers: {
         "Content-Type": "application/json",
