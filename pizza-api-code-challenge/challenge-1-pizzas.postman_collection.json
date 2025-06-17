@@ -1,0 +1,75 @@
+{
+  "info": {
+    "name": "Challenge 1 - Pizzas",
+    "description": "Postman collection for testing the Pizza API",
+    "_postman_id": "12345678-abcd-ef00-1234-abcdef123456",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Pizzas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/pizzas",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["pizzas"]
+        }
+      }
+    },
+    {
+      "name": "Create Pizza",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Pepperoni\",\n  \"ingredients\": \"Tomato, Cheese, Pepperoni\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/pizzas",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["pizzas"]
+        }
+      }
+    },
+    {
+      "name": "Get Pizza by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/pizzas/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["pizzas", "1"]
+        }
+      }
+    },
+    {
+      "name": "Delete Pizza by ID",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/pizzas/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["pizzas", "1"]
+        }
+      }
+    }
+  ]
+}
